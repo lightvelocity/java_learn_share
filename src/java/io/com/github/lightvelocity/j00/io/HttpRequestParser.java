@@ -3,6 +3,8 @@ package com.github.lightvelocity.j00.io;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+import com.github.lightvelocity.common.HttpRequest;
+
 public class HttpRequestParser {
 
 	public static HttpRequest parse(BufferedReader reader) {
@@ -28,7 +30,7 @@ public class HttpRequestParser {
 			}
 			
 			if (reader.ready()) {
-				request.setContent(reader.readLine());
+				request.setBody(reader.readLine());
 			}
 			
 			return request;

@@ -8,17 +8,19 @@ import java.util.Date;
 
 import org.apache.commons.io.IOUtils;
 
+import com.github.lightvelocity.common.HttpRequest;
+import com.github.lightvelocity.common.HttpResponse;
+
 /**
  * 请求处理器
  * @author hzlimaozhi
  *
  */
-public class SocketHandler implements Runnable {
+public class SocketClientHandler implements Runnable {
 	
-	/** 连接socket */
 	private Socket socket;
 	
-	public SocketHandler(Socket socket) {
+	public SocketClientHandler(Socket socket) {
 		this.socket = socket;
 	}
 	

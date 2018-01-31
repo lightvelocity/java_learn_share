@@ -1,11 +1,11 @@
-package com.github.lightvelocity.j01.nio.file;
+package com.github.lightvelocity.j01.nio.block;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class FileChannelDemo {
+public class BlockFileChannel {
 	
 	public static void main(String[] args) throws IOException {
 		RandomAccessFile srcFile = new RandomAccessFile("D://Temp//NioTest.txt", "r");

@@ -1,4 +1,4 @@
-package com.github.lightvelocity.j00.io;
+package com.github.lightvelocity.common;
 
 import java.util.ArrayList;
 import java.util.Date;

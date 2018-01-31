@@ -28,7 +28,7 @@ public class SocketServer implements Runnable {
 			
 			while (!stop) {
 				Socket socket = server.accept();
-				new Thread(new SocketHandler(socket)).start();
+				new Thread(new SocketClientHandler(socket)).start();
 			}
 			
 		} catch(Exception e) {
